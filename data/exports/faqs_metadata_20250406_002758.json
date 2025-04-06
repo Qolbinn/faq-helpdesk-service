@@ -1,0 +1,10 @@
+{
+  "faqs": {
+    "0": {
+      "id": 1,
+      "question": "Bagaimana cara reset password?",
+      "answer": "Untuk reset password, silakan klik menu 'Lupa Password' pada halaman login dan ikuti petunjuk yang diberikan."
+    }
+  },
+  "last_updated": "2025-04-05T23:59:51.525320"
+}
