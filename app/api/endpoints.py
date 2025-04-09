@@ -25,6 +25,7 @@ EMBEDDING_DIM = int(os.getenv("EMBEDDING_DIM", "768"))
 INDEX_PATH = os.getenv("INDEX_PATH", "data/faqs_index.faiss")
 METADATA_PATH = os.getenv("METADATA_PATH", "data/faqs_metadata.json")
 DEFAULT_THRESHOLD = float(os.getenv("DEFAULT_THRESHOLD", "0.6"))
+HIGH_CONFIDENCE_THRESHOLD = float(os.getenv("DEFAULT_THRESHOLD", "0.8"))
 
 router = APIRouter()
 
@@ -49,21 +50,58 @@ def get_status(model: EmbeddingModel = Depends(get_embedding_model)):
         "last_updated": model.metadata.get("last_updated", None)
     }
 
-@router.post("/query", response_model=QueryResponse)
+# @router.post("/query", response_model=QueryResponse)
+# def query(input_data: QueryInput, model: EmbeddingModel = Depends(get_embedding_model)):
+#     results = model.search(input_data.query, input_data.top_k)
+    
+#     # Filter by threshold
+#     filtered_results = [r for r in results if r["similarity"] >= input_data.threshold]
+
+#     # # Menghapus answer dari alternative results
+#     # formatted_results = [
+#     #     {key: value for key, value in r.items() if key != "answer"} 
+#     #     for r in filtered_results
+#     # ]
+
+#     # Format response
+#     response = {"results": filtered_results}
+    
+#     # Add best match if available
+#     if filtered_results:
+#         response["best_match"] = filtered_results[0]
+    
+#     return response
+
+@router.post("/query", response_model=dict)
 def query(input_data: QueryInput, model: EmbeddingModel = Depends(get_embedding_model)):
     results = model.search(input_data.query, input_data.top_k)
     
     # Filter by threshold
     filtered_results = [r for r in results if r["similarity"] >= input_data.threshold]
+
+    # Tentukan best match
+    best_match = filtered_results[0] if filtered_results else None
+
+    # Jika best_match memiliki similarity > HIGH_CONFIDENCE_THRESHOLD, tampilkan answer-nya
+    if best_match and best_match["similarity"] > HIGH_CONFIDENCE_THRESHOLD:
+        return {
+            "message": "Best match found",
+            "best_match": {
+                "question": best_match["question"],
+                "answer": best_match["answer"],
+                "similarity": best_match["similarity"]
+            }
+        }
     
-    # Format response
-    response = {"results": filtered_results}
-    
-    # Add best match if available
-    if filtered_results:
-        response["best_match"] = filtered_results[0]
-    
-    return response
+    # Jika similarity <= 0.8, tampilkan daftar alternatif (tanpa answer)
+    alternative_questions = [
+        {"id": r["id"], "question": r["question"], "similarity": r["similarity"]}
+        for r in filtered_results
+    ]
+    return {
+        "message": "No high-confidence match found. Please select from the alternatives.",
+        "alternatives": alternative_questions
+    }
 
 @router.post("/faqs", status_code=201)
 def create_faq(faq: FAQItem, model: EmbeddingModel = Depends(get_embedding_model)):

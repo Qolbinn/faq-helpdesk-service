@@ -19,3 +19,48 @@
 2025-04-06 00:25:54,343 - app.services.embedding - INFO - Model loaded successfully
 2025-04-06 00:25:54,344 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
 2025-04-06 00:25:54,345 - app.services.embedding - INFO - Loaded index with 1 vectors
+2025-04-06 21:40:50,681 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-06 21:40:53,945 - app.services.embedding - INFO - Model loaded successfully
+2025-04-06 21:40:53,945 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-06 21:40:53,973 - app.services.embedding - INFO - Loaded index with 1 vectors
+2025-04-06 21:42:19,906 - app.services.embedding - INFO - Index saved with 2 vectors
+2025-04-06 21:43:43,929 - app.services.embedding - INFO - Index saved with 2 vectors
+2025-04-09 19:47:11,080 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 19:47:14,626 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 19:47:14,627 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 19:47:14,643 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 19:54:19,169 - app.services.embedding - INFO - Index saved with 2 vectors
+2025-04-09 19:56:24,184 - app.services.embedding - INFO - Index saved with 2 vectors
+2025-04-09 20:00:09,119 - app.services.embedding - INFO - Index saved with 2 vectors
+2025-04-09 20:35:51,318 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:35:54,684 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:35:54,685 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:35:54,710 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:39:35,891 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:39:38,453 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:39:38,453 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:39:38,455 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:41:07,081 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:41:09,829 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:41:09,830 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:41:09,832 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:50:42,520 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:50:44,982 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:50:44,983 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:50:44,984 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:56:11,933 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:56:15,024 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:56:15,026 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:56:15,028 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:56:35,840 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:56:38,192 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:56:38,193 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:56:38,195 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 20:57:23,601 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 20:57:25,719 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 20:57:25,720 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 20:57:25,721 - app.services.embedding - INFO - Loaded index with 2 vectors
+2025-04-09 21:01:47,420 - app.services.embedding - INFO - Loading model: indolem/indobert-base-uncased
+2025-04-09 21:01:49,332 - app.services.embedding - INFO - Model loaded successfully
+2025-04-09 21:01:49,333 - app.services.embedding - INFO - Loading FAISS index from data/faqs_index.faiss
+2025-04-09 21:01:49,335 - app.services.embedding - INFO - Loaded index with 2 vectors

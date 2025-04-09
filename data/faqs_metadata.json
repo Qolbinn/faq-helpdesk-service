@@ -4,7 +4,12 @@
       "id": 1,
       "question": "Bagaimana cara reset password?",
       "answer": "Untuk reset password, silakan klik menu 'Lupa Password' pada halaman login dan ikuti petunjuk yang diberikan."
+    },
+    "1": {
+      "id": 4,
+      "question": "Test Pertanyaan with Embedding diupdatedd ?",
+      "answer": "<div>Test jawabannya updated wokee<br><br>sekarang ada updated sedikit<br><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;application/pdf&quot;,&quot;filename&quot;:&quot;proposal_4SI2_222111926_ARZUDA QOLBIN MULYA.pdf&quot;,&quot;filesize&quot;:271382,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/faq-attachment/wqm2J2MxbQCfDvhlrX5gqHQoTVZHcuu1ym1BJwc3.pdf&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/faq-attachment/wqm2J2MxbQCfDvhlrX5gqHQoTVZHcuu1ym1BJwc3.pdf&quot;}\" data-trix-content-type=\"application/pdf\" class=\"attachment attachment--file attachment--pdf\"><a href=\"http://127.0.0.1:8000/storage/faq-attachment/wqm2J2MxbQCfDvhlrX5gqHQoTVZHcuu1ym1BJwc3.pdf\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">proposal_4SI2_222111926_ARZUDA QOLBIN MULYA.pdf</span> <span class=\"attachment__size\">265.02 KB</span></figcaption></a></figure></div>"
     }
   },
-  "last_updated": "2025-04-05T23:59:51.525320"
+  "last_updated": "2025-04-09T20:00:09.117098"
 }

@@ -14,7 +14,7 @@ class QueryInput(BaseModel):
 class QueryResult(BaseModel):
     id: int
     question: str
-    answer: str
+    answer: Optional[str]
     similarity: float
 
 class QueryResponse(BaseModel):
